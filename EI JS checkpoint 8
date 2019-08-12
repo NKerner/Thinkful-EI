@@ -1,0 +1,150 @@
+function jediName(firstName, lastName){
+  let lastPart = firstName.charAt(0) + firstName.charAt(1);
+  let firstPart = lastName.charAt(0) + lastName.charAt(1) + lastName.charAt(2);
+  console.log(firstPart + lastPart);
+}
+
+
+jediName('Nick','Kerner');
+
+
+
+
+function beyond(num){
+  if(num === 0){
+    console.log('Staying home');
+  }
+  if(isFinite(num) === true & num > 0){
+    console.log('To infinity');
+  }
+  if(isFinite(num) === true & num < 0){
+    console.log('To negative infinity');
+  }
+  if(num === Infinity){
+    console.log('And beyond');
+  }
+}
+
+function decode(word){
+  if(word[0] === 'a'){
+    console.log( word[1]);
+  }
+  if(word[0] === 'b'){
+    console.log( word[2]);
+  }
+  if(word[0] === 'c'){
+    console.log( word[3]);
+  }
+  if(word[0] === 'd'){
+    console.log( word[4]);
+  }
+  else{console.log( " ");}
+}
+decode('craft');
+decode('block');
+decode('argon');
+decode('meter');
+decode('bells');
+decode('brown');
+decode('croon');
+decode('droop');
+
+
+function daysInMonth(month,leapYear){
+let months = {
+  January: 31,
+  February: 28,
+  March: 31,
+  April: 30,
+  May: 31,
+  June: 30,
+  July: 31,
+  August: 31,
+  September: 30,
+  October: 31,
+  November: 30,
+  December: 31,
+};
+
+if(month === 'January'){
+  return months.January;
+}
+if(month === 'February' & leapYear === false){
+  return months.February;
+}
+if(month === 'February' & leapYear === true){
+  return months.February + 1;
+}
+if(month === 'March'){
+  return months.March;
+}
+if(month === 'April'){
+  return months.April;
+}
+if(month === 'May'){
+  return months.May;
+}
+if(month === 'June'){
+  return months.June;
+}
+if(month === 'July'){
+  return months.July;
+}
+if(month === 'August'){
+  return months.August;
+}
+if(month === 'September'){
+  return months.September;
+}
+if(month === 'October'){
+  return months.October;
+}
+if(month === 'November'){
+  return months.November;
+}
+if(month === 'December'){
+  return months.December;
+}
+else{throw "Must provide a valid month";}
+}
+// I coded this before I researched Switch/case so I know how to do it that way also.
+
+function rockPaperScissors(num){
+  const randomNo = Math.floor(Math.random() * 3) + 1;
+  if(randomNo === 3 & num === 1){
+  alert('You lose');
+  }
+  if(randomNo === 3 & num === 2){
+    alert('You Win');
+  }
+  if(randomNo ===3 & num === 3){
+    alert('Tie');
+  }
+  if(randomNo === 2 & num === 1){
+    alert('You Win');
+  }
+  if(randomNo === 2 & num === 2){
+    alert('Tie');
+  }
+  if(randomNo === 2 & num === 3){
+    alert('You Lose');
+  }
+  if(randomNo === 1 & num === 1){
+    alert('Tie');
+  }
+  if(randomNo === 1 & num === 2){
+    alert('You Lose');
+  }
+  if(randomNo ===1 & num === 3){
+    alert('You Win');
+  }
+  if(num > 3){
+    alert('Please enter 1 for rock, 2 for paper, 3 for scissors');
+  }
+  if(num === 0){
+    alert('Please enter 1 for rock, 2 for paper, 3 for scissors');
+  }
+
+
+
+}
